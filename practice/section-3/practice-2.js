@@ -1,5 +1,22 @@
 'use strict';
 
-function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+function createUpdatedCollection(a, b) 
+{
+  var arr=a;
+		for(let i=0;i<a.length;i++)
+		{
+
+
+			 for(let j=0;j<b.value.length;j++)
+			 {
+			 	if(a[i].key===b.value[j])
+			 	{	
+			 		arr[i].count=arr[i].count-parseInt(arr[i].count/3);
+			 	}
+			 }
+
+		  
+		}
+
+	return arr;
 }
